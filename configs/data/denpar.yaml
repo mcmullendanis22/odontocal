@@ -1,0 +1,9 @@
+tag: denpar
+modalities: [periapical]
+n_classes: 4
+label_names: [stage_i, stage_ii, stage_iii, stage_iv]
+access_url: https://zenodo.org/records/13998619
+license: see Nature Scientific Data record
+splits:
+  source: stratified
+  fractions: [0.7, 0.1, 0.2]

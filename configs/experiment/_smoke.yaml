@@ -1,0 +1,17 @@
+# for unit-test smoke only; do not use for reporting
+experiment: smoke
+n_classes: 5
+mllms: [oralgpt_omni]
+datasets: [mmoral]
+model: resnet50
+lr: 1.0e-3
+weight_decay: 1.0e-4
+epochs: 1
+batch_size: 4
+precision: bfloat16
+calibration:
+  method: modality_aware_ts
+  ensemble: confidence_weighted
+  selective_referral: true
+  tau: 0.55
+seed: 0

@@ -1,0 +1,34 @@
+hypotheses:
+  - id: H1
+    statement: calibrated net benefit >= uncalibrated net benefit by at least the pre-specified threshold
+    confirmed_by:
+      table: ablation
+      row: full_system
+      metric: NB
+      relation: ">= no_calibration"
+  - id: H2
+    statement: modality-aware temperature scaling reduces ECE below global TS
+    confirmed_by:
+      table: ablation
+      row: full_system
+      metric: ECE
+      relation: "<= global_ts_only"
+  - id: H3
+    statement: ECR >= 0.85 at RR <= 0.20 on the primary dataset
+    confirmed_by:
+      table: ablation
+      row: full_system
+      metric: [ECR, RR]
+      relation: "ECR >= 0.85 and RR <= 0.20"
+  - id: H4
+    statement: equipment-driven AUC variance exceeds demographic-driven AUC variance
+    confirmed_by:
+      table: cross_dataset
+      relation: "Δ|equipment-shift datasets| > Δ|demographic-shift dataset|"
+      direction: qualitative
+  - id: H5
+    statement: medical-specialised MLLMs underperform general-purpose MLLMs on dental tasks
+    confirmed_by:
+      table: model_family_summary
+      metric: AUC
+      relation: "medical mean < general mean"

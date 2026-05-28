@@ -1,0 +1,5 @@
+name: efficientnet_b4
+family: cnn_baseline
+pretrained: true
+drop_rate: 0.2
+input_size: 380

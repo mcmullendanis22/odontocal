@@ -1,0 +1,13 @@
+experiment: ablation_best_single_mllm
+n_classes: 5
+mllms: [oralgpt_omni]
+datasets: [mmoral, dentex, denpar, intraoral_caries, tufts]
+calibration:
+  method: modality_aware_ts
+  ensemble: none
+  selective_referral: true
+  tau: 0.55
+inference:
+  decoding: greedy
+  temperature: 0.0
+seed: 0

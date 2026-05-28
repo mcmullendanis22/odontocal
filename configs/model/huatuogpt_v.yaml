@@ -1,0 +1,6 @@
+name: huatuo_v
+family: medical
+hf_repo_id: FreedomIntelligence/HuatuoGPT-Vision-7B
+parameters_billions: 7
+dtype: bfloat16
+max_new_tokens: 192

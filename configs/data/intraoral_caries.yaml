@@ -1,0 +1,10 @@
+tag: intraoral_caries
+modalities: [intraoral]
+n_classes: 2
+label_names: [sound, caries]
+access_url: https://zenodo.org/records/14827784
+license: see Nature Scientific Data record
+demographics: South Asian (Mithi-Sindh, Pakistan), age 10-24
+splits:
+  source: stratified
+  fractions: [0.7, 0.1, 0.2]

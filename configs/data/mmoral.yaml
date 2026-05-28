@@ -1,0 +1,10 @@
+tag: mmoral
+modalities: [panoramic, periapical, intraoral, cephalometric]
+n_classes: 5
+label_names: [caries, periodontal, periapical, opmd, normal]
+access_url: ""
+license: LICENSE_UNVERIFIED
+n_test_min: 4000
+splits:
+  source: official
+  fractions: [0.7, 0.1, 0.2]

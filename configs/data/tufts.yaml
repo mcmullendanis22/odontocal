@@ -1,0 +1,10 @@
+tag: tufts
+modalities: [panoramic]
+n_classes: 2
+label_names: [normal, abnormal]
+access_url: https://tdd.ece.tufts.edu/
+license: request-based
+notes: |
+  Access requires a signed request through the Tufts Dental Database portal.
+  After approval, deposit a manifest at <data_root>/tufts/<split>.jsonl with
+  fields {image_path, label, case_id} before evaluation.

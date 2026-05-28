@@ -1,0 +1,6 @@
+name: intern_vl
+family: general
+hf_repo_id: OpenGVLab/InternVL3_5-8B
+parameters_billions: 8
+dtype: bfloat16
+max_new_tokens: 192

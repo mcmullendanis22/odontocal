@@ -1,0 +1,13 @@
+experiment: ablation_no_selective_referral
+n_classes: 5
+mllms: [qwen25_vl, intern_vl, cog_vlm2, llava_med, huatuo_v, medvlm_r1, oralgpt_omni]
+datasets: [mmoral, dentex, denpar, intraoral_caries, tufts]
+calibration:
+  method: modality_aware_ts
+  ensemble: confidence_weighted
+  selective_referral: false
+  tau: 0.0
+inference:
+  decoding: greedy
+  temperature: 0.0
+seed: 0

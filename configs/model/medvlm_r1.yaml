@@ -1,0 +1,6 @@
+name: medvlm_r1
+family: medical
+hf_repo_id: JZPeterPan/MedVLM-R1
+parameters_billions: 7
+dtype: bfloat16
+max_new_tokens: 192

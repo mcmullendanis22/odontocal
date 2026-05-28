@@ -1,0 +1,15 @@
+calibrator: modality_aware_ts
+n_bins: 15
+optim:
+  method: bounded
+  bounds: [0.05, 20.0]
+  tolerance: 1.0e-5
+selective_referral:
+  target_capture: 0.85
+  referral_cap: 0.20
+  grid_min: 0.05
+  grid_max: 0.95
+  grid_steps: 19
+bootstrap:
+  n_resamples: 2000
+  alpha: 0.05

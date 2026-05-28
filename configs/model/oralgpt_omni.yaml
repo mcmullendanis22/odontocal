@@ -1,0 +1,6 @@
+name: oralgpt_omni
+family: dental
+hf_repo_id: isbrycee/OralGPT-Omni-7B
+parameters_billions: 7
+dtype: bfloat16
+max_new_tokens: 192

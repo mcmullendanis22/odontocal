@@ -1,0 +1,10 @@
+tag: dentex
+modalities: [panoramic]
+n_classes: 5
+label_names: [normal, caries, deep_caries, periapical_lesion, impacted_tooth]
+access_url: https://dentex.grand-challenge.org/
+license: CC BY-NC-SA
+official_partition:
+  train: 705
+  val: 50
+  test: 250

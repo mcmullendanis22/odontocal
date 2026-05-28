@@ -1,0 +1,13 @@
+experiment: supplementary_tau_sweep
+n_classes: 5
+mllms: [qwen25_vl, intern_vl, cog_vlm2, llava_med, huatuo_v, medvlm_r1, oralgpt_omni]
+datasets: [mmoral, dentex, denpar, intraoral_caries, tufts]
+calibration:
+  method: modality_aware_ts
+  ensemble: confidence_weighted
+  selective_referral: true
+  tau_sweep: [0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8]
+inference:
+  decoding: greedy
+  temperature: 0.0
+seed: 0
